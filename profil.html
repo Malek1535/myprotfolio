@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malek Ben Amor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="profil.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: #cc167d; 
+            color: #fff; 
+            padding: 10px 0; 
+            text-align: center; 
+            position: fixed; 
+            width: 100%; 
+            top: 0; 
+            z-index: 1000; 
+        }
+
+        /* search */
+        input[type=text] {
+            
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 15px;
+            background-color: white;
+            background-size: 50px;
+            background-image: url('search-icon-png-1.png');
+            background-position: 0px center; 
+            background-repeat: no-repeat;
+            padding: 10px 10px 12px 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none; 
+            padding: 0; 
+        }
+        
+        nav ul li {
+            display: inline; 
+            margin-right: 20px; 
+        }
+        
+        nav ul li a {
+            color: #fff; 
+            text-decoration:none; 
+        }
+        
+        section {
+            padding: 60px 20px; 
+            margin-top: 100px; 
+        }
+        
+        .content {
+            margin-top: 50px; 
+        }
+        
+        footer {
+            text-align: center; 
+            padding: 10px 0; 
+            background: #333; 
+            color: white ; 
+        }
+
+        /* Styles pour les formulaires */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; 
+        }
+
+        input[type="email"],
+        textarea {
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+        }
+
+        button {
+            padding: 10px; 
+            background-color: #f82d9dd9; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+        }
+
+        /* Media Queries pour les petits écrans */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block; 
+                margin-right: 0; 
+            }
+
+            section {
+                padding: 40px 10px; 
+            }
+        }
+
+        img {
+            border: 1px solid #333;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <nav >
+        <div class="about-left">
+        <form >
+            
+            <input type="text" name="search" placeholder="Search.." ;>
+       
+        </form>
+        </div>
+        
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+        <section id="about">
+            <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">À propos de moi</h2>
+            <div class="about-container">
+                <div class="about-left">
+                    <p>
+                        <strong><em>Bonjour, je suis Malek, </em></strong> <br>Etudiante en première année d'informatique de gestion. 
+                        Je suis passionnée par les technologies. J'aime explorer les solutions innovantes qui optimisent les processus et améliorent l'expérience utilisateur. 
+                        Curieuse et déterminée, je m'investis dans mes études tout en développant mes compétences en programmation et en gestion de données. 
+                        En dehors de mes cours, je m'intéresse à dessiner, ce qui enrichit ma perspective et ma créativité. Mon objectif est de contribuer à des projets qui allient technologie et gestion pour répondre aux défis actuels des entreprises.
+                    </p>
+                </div>
+                <div class="about-center">
+                    <img src="selfpic.jpg" alt="My pic" >
+                </div>
+                <div class="about-right">
+                    <h3>Nom:</h3>
+                    <h4>Malek Ben Amor</h4>
+                    <h3>Âge:</h3>
+                    <h4>19 ans</h4>
+                    <h3>Nationalité:</h3>
+                    <h4>Tunisienne</h4>
+                    <h3>Faculté:</h3>
+                    <h4>FSEGS</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="parcours">
+            <h2>Mon parcours</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        📘
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat en Economie et Gestion</h3>
+                        <span>2024</span>
+                        <p>Obtention de mon baccalauréat avec une spécialisation en économie et gestion.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        💻
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Licence en Informatique de Gestion</h3>
+                        <span>2024</span>
+                        <p>Début de mes études en Informatique de Gestion, où j'approfondis mes compétences en technologies et gestion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Contactez-moi</h2>
+            <form>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Taper ici pour écrire votre adresse e-mail...">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" placeholder="Tapez ici pour m'écrire un message..."></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+            
+            <div class="social-icons">
+                <p>Suivez-moi sur les réseaux sociaux :</p>
+            
+                <!-- <a href="mailto:malekbenamorfac@gmail.com"><i class="fa-solid fa-envelope"></i></a> -->
+                <a href="https://www.facebook.com/malekbenamor.55"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/malek_b__amor/"><i class="fa-brands fa-instagram"></i></a>
+            
+            </div>
+            <p>N'hésitez pas à me contacter par e-mail: <a href="mailto:malekbenamorfac@gmail.com">malekbenamorfac@gmail.com</a></p>
+
+            
+            
+        </section>
+    </div>
+    <footer>
+        
+        <p>© 2024 Malek ben Amor . Tous droits réservés.</p>
+       
+        </footer>
+        </body>
+       </html>

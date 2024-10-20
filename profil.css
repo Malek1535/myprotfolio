@@ -1,0 +1,250 @@
+ header {
+    background: #cc167d; 
+    color: #fff; 
+    padding: 10px 20px; /* Ajuste le padding pour un espace confortable */
+    text-align: center; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espace entre la recherche et les éléments de navigation */
+    align-items: center; /* Centre verticalement les éléments */
+    padding: 0 20px; /* Ajuste le padding latéral */
+}
+
+nav form {
+    flex-grow: 1; /* La barre de recherche prendra l'espace disponible à gauche */
+    max-width: 300px; /* Limite la largeur du champ de recherche */
+}
+
+nav ul {
+    display: flex;
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+nav ul li {
+    margin-right: 20px; /* Espacement entre les liens */
+}
+
+nav ul li a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: white;
+    background-size: 50px;
+    background-image: url('search-icon-png-1.png');
+    background-position: 0px center; 
+    background-repeat: no-repeat;
+    padding: 10px 10px 12px 50px;
+}
+
+button:hover {
+    background-color: #cc167d;
+    transition: 0.3s;
+    
+}
+
+.about-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white; /* Changed "color" to "background-color" */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.about-left, .about-center, .about-right {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.about-center {
+    text-align: center;
+}
+
+.about-center img {
+    max-width: 100%; 
+    border: 2px solid #cc167d;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto; 
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+/* Texte à gauche */
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px; 
+    color: rgba(71, 9, 17, 0.959); 
+    text-align: left; 
+}
+
+/* Titres à droite */
+h3 {
+    color: #b44e4e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px 0;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 0; 
+}
+
+h4 {
+    font-size: small;
+    margin: 1%;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 0; /* Fixed the comment syntax */
+}
+
+/* Ajuster la mise en page sur les petits écrans */
+@media (max-width: 800px) {
+    .about-container {
+        flex-direction: column; /* Fixed the comment syntax */
+        text-align: center; 
+    }
+
+    .about-left, .about-right {
+        margin-bottom: 20px;  
+    }
+
+    h3, h4 {
+        text-align: center;
+        margin-left: 0; 
+        
+    }
+
+    .about-center img {
+        width: 150px;
+        height: 150px;
+        margin-left: 0; /* Centre l'image sur mobile */
+    }
+}
+
+/* _________________________ */
+
+#parcours {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.timeline-icon {
+    font-size: 30px;
+    background-color: #cc167d;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.timeline-content {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.timeline-content h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #cc167d;
+}
+
+.timeline-content span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Media query pour mobile */
+@media (max-width: 800px) {
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-icon {
+        margin-bottom: 10px;
+    }
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    margin-top:30px ;
+}
+.social-icons a{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+    margin: 0 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.social-icons a .fab {
+    font-size: 30px;
+    
+}
+footer p {
+    text-align: center;
+    color: white !important; /* Forcer la couleur blanche */
+}
+/* j ai entré les modifications de la derniere partie mais ca marche plus */
+.email-link {
+    color: #cc167d; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+}
+
+.email-link:hover {
+    color: #b44e4e; 
+    text-decoration: underline; 
+}
+
+
+
